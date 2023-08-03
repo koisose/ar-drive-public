@@ -3,11 +3,9 @@ import React from 'react'
 import classNames from 'clsx'
 import Image from 'next/image'
 
-import { siteConfig } from '@/config/site'
 import BranchButtonLoginOrAccount from '@/integrations/siwe/components/branch-button-login-or-account'
 import useScroll from '@/lib/hooks/use-scroll'
 
-import { NavigationMenuGeneral } from './navigation-menu-general'
 import { UserDropdown } from './user-dropdown'
 import { BranchColorMode } from '../shared/branch-color-mode'
 import { LinkComponent } from '../shared/link-component'
@@ -52,11 +50,9 @@ export function Header(props: Props) {
               <Image alt="Logo" src="/logo-dark.png" width={32} height={32} />
               <Image alt="Logo" src="/logo-white.png" width={32} height={32} />
             </BranchColorMode>
-            <h1 className="text-gradient-sand ml-2 text-2xl font-bold">{siteConfig.name}</h1>
+            <h1 className="text-gradient-sand ml-2 text-2xl font-bold">Ardrive Public Gallery</h1>
           </LinkComponent>
-          <div className="flex flex-1 justify-center lg:px-10">
-            <NavigationMenuGeneral />
-          </div>
+          <div className="flex flex-1 justify-center lg:px-10"></div>
 
           <div className="flex items-center gap-4">
             <BranchButtonLoginOrAccount classNameButtonLogout="menu-item" classNameButtonLogin="menu-item colormode" />

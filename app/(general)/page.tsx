@@ -76,6 +76,37 @@ export default function Home() {
                 Click here to view the <span className="font-bold">integrations branch</span> for more examples.
               </LinkComponent>
             </motion.p>
+            <div
+              className="relative col-span-1 mx-[10em] mt-5 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-neutral-800 dark:text-white"
+              style={{ opacity: 1, transform: 'none' }}>
+              <div className="flex h-40 items-center justify-center">
+                <div className="flex items-center justify-center space-x-20">
+                  <img
+                    alt="Disco logo"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                    decoding="async"
+                    data-nimg="1"
+                    className="rounded-full"
+                    srcSet="/_next/image?url=%2Fintegrations%2Fdisco.jpeg&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fintegrations%2Fdisco.jpeg&amp;w=256&amp;q=75 2x"
+                    src="/_next/image?url=%2Fintegrations%2Fdisco.jpeg&amp;w=256&amp;q=75"
+                    style={{ color: 'transparent' }}
+                  />
+                </div>
+              </div>
+              <div className="mx-auto max-w-xl text-center">
+                <h2 className="mb-3 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-xl font-bold text-transparent dark:from-stone-100 dark:to-emerald-200 md:text-3xl md:font-normal">
+                  Disco
+                </h2>
+                <div className="content prose-sm mx-5 -mt-2 leading-normal text-gray-500 md:prose dark:text-gray-100">
+                  <p>Disco is identity simplified. Giving the tools to consent to how information is shared and with whom.</p>
+                </div>
+                <a className="btn btn-light my-4" href="/integration/disco">
+                  See gallery
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
